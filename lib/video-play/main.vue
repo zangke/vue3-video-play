@@ -26,7 +26,7 @@
         v-show="props.poster && state.playBtnState == 'play' && state.currentTime == '00:00:00'"
       >
         <img :src="props.poster" :alt="props.title" />
-      </div>-->
+      </div> -->
       <video
         ref="refdVideo"
         class="d-player-video-main"
@@ -47,13 +47,14 @@
       >您的浏览器不支持Video标签。</video>
     </div>
     <!-- 缓冲动画 -->
-    <!-- <d-waitingloading text="正在缓冲..." v-show="state.waitingLoading" /> -->
+    <!-- <d-waitingloading text="正在缓冲..." v-show="state.waitingLoading" />  -->
 
     <transition name="d-fade-in">
       <div class="d-player-lightoff" v-show="state.lightOff"></div>
     </transition>
     <!-- 全屏模式&&鼠标滑过 顶部显示的内容 -->
-    <d-player-top :title="props.title" v-if="state.fullScreen"></d-player-top>
+    <!-- <d-player-top :title="props.title" v-if="state.fullScreen"></d-player-top> -->
+  
     <!-- 状态栏 移动端不显示-->
     <div class="d-player-state" v-if="!isMobile">
       <transition name="d-scale-out">
@@ -85,6 +86,9 @@
     />
     <!-- 预加载动画 -->
     <d-loading :loadType="state.loadStateType" />
+    <d-player-top :title="props.title" :showClose="props.src" 
+      @channelChooseClick="channelChooseClick"
+      @channelCloseClick="channelCloseClick"></d-player-top>
     <d-contextmenu />
     <!-- PC端播放按钮控制器  移动端调用自带控制器-->
     <div class="d-player-control" ref="refPlayerControl" v-if="!isMobile && state.control">
@@ -266,6 +270,8 @@ const emits = defineEmits([
   "mirrorChange",
   "loopChange",
   "lightOffChange",
+  "channelChooseClick",
+  "channelCloseClick",
 ]); //emits
 
 const refPlayerWrap: Ref<HTMLElement> = ref(null); //wrap
@@ -519,6 +525,14 @@ const loopChange = (val) => {
 const lightOffChange = (val) => {
   // console.log(val)
   emits("lightOffChange", val, state.dVideo);
+};
+// 选择通道事件
+const channelChooseClick = (e) => {
+  emits("channelChooseClick",e);
+};
+// 关闭通道事件
+const channelCloseClick = (e) => {
+  emits("channelCloseClick",e);
 };
 
 const requestPictureInPictureHandle = () => {

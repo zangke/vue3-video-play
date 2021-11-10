@@ -14,7 +14,7 @@ export default defineConfig({
   plugins: [vue()],
   server: {
     port: 3005,
-    open: true,
+    open: false,
     // 反向代理
     proxy: {
       '/api': {

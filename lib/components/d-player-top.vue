@@ -7,8 +7,13 @@
 */
 <template>
     <div class="d-player-top">
-        <p class="top-title">{{ title || '' }}</p>
-        <p class="top-title">{{ currTime }}</p>
+        <span class="top-title">{{ title }} </span>
+        <!-- <p class="top-title">{{ title || '' }}</p> -->
+        <!-- <p class="top-title">{{ currTime }}</p> -->
+        <span class="top-button">
+            <button @click.stop="channelChooseClick">选择通道</button>
+            <button v-if="showClose" @click.stop="channelCloseClick">关闭</button>
+        </span>
     </div>
 </template>
 
@@ -32,8 +37,13 @@ Date.prototype.format = function (fmt) {
 const props = defineProps({
     title: {
         default: ''
+    },
+    showClose: { 
+        default : false
     }
 })
+const emits = defineEmits(['channelChooseClick', 'channelCloseClick'])
+
 let currTime = ref('00:00:00')
 currTime.value = new Date().format("hh:mm:ss");
 let timeout = null
@@ -44,21 +54,48 @@ timeout = setInterval(() => {
 
 onUnmounted(() => {
     clearInterval(timeout)
-})
+});
+
+// 选择通道事件
+const channelChooseClick = (e) => {
+  emits("channelChooseClick",e);
+};
+// 关闭通道事件
+const channelCloseClick = (e) => {
+  emits("channelCloseClick",e);
+};
+
 </script>
 
 <style scoped lang='less'>
 .d-player-top {
     position: absolute;
     font-size: 16px;
-    left: 0px;
     top: 0;
-    right: 0px;
-    color: #fff;
     display: flex;
-    padding: 0 20px;
-    height: 60px;
+    height: 36px;
+    width: 100%;
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
     justify-content: space-between;
+    z-index:999;
+
+}
+.top-title {
+    padding-left: 3px;
+    color: #fff;
+    background-color:hsla(0,0%,50%,.5);
+    border-radius:2px; 
+    padding:5px;
+    max-width:120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.top-button {
+    padding-right: 3px;
+    display: none;
+}
+.d-player-top:hover .top-button {
+    display: flex;
 }
 </style>
