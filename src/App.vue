@@ -61,13 +61,15 @@ const options = reactive({
 })
 const video = ref(null)
 
-const onChannelChooseClick = ev => {
+const onChannelChooseClick = (ev) => {
   console.log(ev, '选择通道')
+  debugger
   options.src = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
 }
 
-const onChannelCloseClick = ev => {
+const onChannelCloseClick =  (ev) => {
   console.log(ev, '关闭通道')
+  debugger
   options.src = ''
 }
 nextTick(() => {

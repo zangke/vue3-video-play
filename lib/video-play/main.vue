@@ -54,7 +54,9 @@
     </transition>
     <!-- 全屏模式&&鼠标滑过 顶部显示的内容 -->
     <!-- <d-player-top :title="props.title" v-if="state.fullScreen"></d-player-top> -->
-  
+    <d-player-top :title="props.title" :showClose="props.src" 
+      @channelChooseClick="channelChooseClick"
+      @channelCloseClick="channelCloseClick"></d-player-top>
     <!-- 状态栏 移动端不显示-->
     <div class="d-player-state" v-if="!isMobile">
       <transition name="d-scale-out">
@@ -86,9 +88,9 @@
     />
     <!-- 预加载动画 -->
     <d-loading :loadType="state.loadStateType" />
-    <d-player-top :title="props.title" :showClose="props.src" 
+    <!-- <d-player-top :title="props.title" :showClose="props.src" 
       @channelChooseClick="channelChooseClick"
-      @channelCloseClick="channelCloseClick"></d-player-top>
+      @channelCloseClick="channelCloseClick"></d-player-top> -->
     <d-contextmenu />
     <!-- PC端播放按钮控制器  移动端调用自带控制器-->
     <div class="d-player-control" ref="refPlayerControl" v-if="!isMobile && state.control">
@@ -527,12 +529,12 @@ const lightOffChange = (val) => {
   emits("lightOffChange", val, state.dVideo);
 };
 // 选择通道事件
-const channelChooseClick = (e) => {
-  emits("channelChooseClick",e);
+const channelChooseClick = () => {
+  emits("channelChooseClick", state);
 };
 // 关闭通道事件
-const channelCloseClick = (e) => {
-  emits("channelCloseClick",e);
+const channelCloseClick = () => {
+  emits("channelCloseClick", state);
 };
 
 const requestPictureInPictureHandle = () => {

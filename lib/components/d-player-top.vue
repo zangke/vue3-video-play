@@ -20,7 +20,6 @@
 <script  setup>
 import { onUnmounted, reactive, ref } from 'vue'
 
-
 Date.prototype.format = function (fmt) {
     let o = {
         'h+': this.getHours(),
@@ -75,9 +74,10 @@ const channelCloseClick = (e) => {
     display: flex;
     height: 36px;
     width: 100%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+    background-color:transparent;
     justify-content: space-between;
-    z-index:999;
+    z-index:100;
 
 }
 .top-title {

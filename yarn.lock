@@ -121,7 +121,7 @@
   resolved "https://registry.nlark.com/@babel/parser/download/@babel/parser-7.15.3.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40babel%2Fparser%2Fdownload%2F%40babel%2Fparser-7.15.3.tgz"
   integrity sha1-NBbZvqdIBSz8tj28wnNoEFse2GI=
 
-"@babel/types@^7.12.0", "@babel/types@^7.13.0", "@babel/types@^7.15.0", "@babel/types@^7.6.1", "@babel/types@^7.9.6":
+"@babel/types@^7.12.0", "@babel/types@^7.13.0", "@babel/types@^7.6.1", "@babel/types@^7.9.6":
   version "7.15.0"
   resolved "https://registry.nlark.com/@babel/types/download/@babel/types-7.15.0.tgz"
   integrity sha1-Ya8R8ihsTpxpyo3rX0N1pzxy3L0=
@@ -243,7 +243,7 @@
 
 "@vitejs/plugin-vue@^1.9.0", "@vitejs/plugin-vue@^1.9.4":
   version "1.9.4"
-  resolved "https://registry.npmmirror.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-1.9.4.tgz#4f48485432cbb986a9fb9d254dc33ce30ddccbfa"
+  resolved "https://registry.npmmirror.com/@vitejs/plugin-vue/download/@vitejs/plugin-vue-1.9.4.tgz?cache=0&sync_timestamp=1635475280393&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vitejs%2Fplugin-vue%2Fdownload%2F%40vitejs%2Fplugin-vue-1.9.4.tgz#4f48485432cbb986a9fb9d254dc33ce30ddccbfa"
   integrity sha1-T0hIVDLLuYap+50lTcM84w3cy/o=
 
 "@volar/code-gen@0.29.3":
@@ -334,17 +334,6 @@
     estree-walker "^2.0.1"
     source-map "^0.6.1"
 
-"@vue/compiler-core@3.2.6":
-  version "3.2.6"
-  resolved "https://registry.nlark.com/@vue/compiler-core/download/@vue/compiler-core-3.2.6.tgz?cache=0&sync_timestamp=1629824327277&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcompiler-core%2Fdownload%2F%40vue%2Fcompiler-core-3.2.6.tgz"
-  integrity sha1-cWK7BnAnPwRWavDTUwCRh6tXeRU=
-  dependencies:
-    "@babel/parser" "^7.15.0"
-    "@babel/types" "^7.15.0"
-    "@vue/shared" "3.2.6"
-    estree-walker "^2.0.2"
-    source-map "^0.6.1"
-
 "@vue/compiler-dom@3.2.21", "@vue/compiler-dom@^3.2.21":
   version "3.2.21"
   resolved "https://registry.npmmirror.com/@vue/compiler-dom/download/@vue/compiler-dom-3.2.21.tgz#d6f6c85364ef8888f9c4e9122bfba11e78fb398c"
@@ -360,14 +349,6 @@
   dependencies:
     "@vue/compiler-core" "3.2.4"
     "@vue/shared" "3.2.4"
-
-"@vue/compiler-dom@3.2.6":
-  version "3.2.6"
-  resolved "https://registry.nlark.com/@vue/compiler-dom/download/@vue/compiler-dom-3.2.6.tgz?cache=0&sync_timestamp=1629824326003&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fcompiler-dom%2Fdownload%2F%40vue%2Fcompiler-dom-3.2.6.tgz"
-  integrity sha1-N2TX/hppbjn7KjydY42gdJ42my0=
-  dependencies:
-    "@vue/compiler-core" "3.2.6"
-    "@vue/shared" "3.2.6"
 
 "@vue/compiler-sfc@3.2.21", "@vue/compiler-sfc@^3.2.21":
   version "3.2.21"
@@ -438,13 +419,6 @@
   dependencies:
     "@vue/shared" "3.2.4"
 
-"@vue/reactivity@3.2.6":
-  version "3.2.6"
-  resolved "https://registry.nlark.com/@vue/reactivity/download/@vue/reactivity-3.2.6.tgz?cache=0&sync_timestamp=1629824924140&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Freactivity%2Fdownload%2F%40vue%2Freactivity-3.2.6.tgz"
-  integrity sha1-uJk/pvSFRReOWI4lqclDGhwbfVA=
-  dependencies:
-    "@vue/shared" "3.2.6"
-
 "@vue/ref-transform@3.2.21":
   version "3.2.21"
   resolved "https://registry.npmmirror.com/@vue/ref-transform/download/@vue/ref-transform-3.2.21.tgz?cache=0&sync_timestamp=1635836341560&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2F%40vue%2Fref-transform%2Fdownload%2F%40vue%2Fref-transform-3.2.21.tgz#b0c554c9f640c3f005f77e676066aa0faba90984"
@@ -472,14 +446,6 @@
     "@vue/reactivity" "3.2.4"
     "@vue/shared" "3.2.4"
 
-"@vue/runtime-core@3.2.6":
-  version "3.2.6"
-  resolved "https://registry.nlark.com/@vue/runtime-core/download/@vue/runtime-core-3.2.6.tgz?cache=0&sync_timestamp=1629824921272&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fruntime-core%2Fdownload%2F%40vue%2Fruntime-core-3.2.6.tgz"
-  integrity sha1-N2uu73/gKmI3fUbQ0KirlRDbHY4=
-  dependencies:
-    "@vue/reactivity" "3.2.6"
-    "@vue/shared" "3.2.6"
-
 "@vue/runtime-dom@3.2.21":
   version "3.2.21"
   resolved "https://registry.npmmirror.com/@vue/runtime-dom/download/@vue/runtime-dom-3.2.21.tgz#33dd15bc85281e773177a30dc6931c294bd77aa1"
@@ -496,15 +462,6 @@
   dependencies:
     "@vue/runtime-core" "3.2.4"
     "@vue/shared" "3.2.4"
-    csstype "^2.6.8"
-
-"@vue/runtime-dom@3.2.6":
-  version "3.2.6"
-  resolved "https://registry.nlark.com/@vue/runtime-dom/download/@vue/runtime-dom-3.2.6.tgz?cache=0&sync_timestamp=1629824925767&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fruntime-dom%2Fdownload%2F%40vue%2Fruntime-dom-3.2.6.tgz"
-  integrity sha1-D3TbyoTVbCIvv71TQVsmA4aFmjs=
-  dependencies:
-    "@vue/runtime-core" "3.2.6"
-    "@vue/shared" "3.2.6"
     csstype "^2.6.8"
 
 "@vue/server-renderer@3.2.21":
@@ -532,11 +489,6 @@
   version "3.2.4"
   resolved "https://registry.npmjs.org/@vue/shared/-/shared-3.2.4.tgz"
   integrity sha512-j2j1MRmjalVKr3YBTxl/BClSIc8UQ8NnPpLYclxerK65JIowI4O7n8O8lElveEtEoHxy1d7BelPUDI0Q4bumqg==
-
-"@vue/shared@3.2.6":
-  version "3.2.6"
-  resolved "https://registry.nlark.com/@vue/shared/download/@vue/shared-3.2.6.tgz?cache=0&sync_timestamp=1629824947203&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40vue%2Fshared%2Fdownload%2F%40vue%2Fshared-3.2.6.tgz"
-  integrity sha1-LCK66I/it7WfpoqcnEzWC64sF5Q=
 
 accepts@~1.3.5:
   version "1.3.7"
@@ -861,7 +813,7 @@ domhandler@^4.2.0:
 
 domhandler@^4.2.2:
   version "4.2.2"
-  resolved "https://registry.nlark.com/domhandler/download/domhandler-4.2.2.tgz#e825d721d19a86b8c201a35264e226c678ee755f"
+  resolved "https://registry.nlark.com/domhandler/download/domhandler-4.2.2.tgz?cache=0&sync_timestamp=1630246778110&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fdomhandler%2Fdownload%2Fdomhandler-4.2.2.tgz#e825d721d19a86b8c201a35264e226c678ee755f"
   integrity sha1-6CXXIdGahrjCAaNSZOImxnjudV8=
   dependencies:
     domelementtype "^2.2.0"
@@ -1191,19 +1143,14 @@ highlight.js@^10.7.2:
   integrity sha512-tzcUFauisWKNHaRkN4Wjl/ZA07gENAjFl3J/c480dprkGTg5EQstgaNFqBfUqCq54kZRIEcreTsAgF/m2quD7A==
 
 hls.js@^1.0.10:
-  version "1.0.10"
-  resolved "https://registry.npmjs.org/hls.js/-/hls.js-1.0.10.tgz"
-  integrity sha512-P+o/wjGJsnqwdXXYfWvopOceXEXFV0H8vs/T+ApsscP/GlpUtdIRWie7qc+jbml95ThjE6+FVci9VGaD51r/6Q==
-
-hls.js@^1.0.12:
-  version "1.0.12"
-  resolved "https://registry.npmmirror.com/hls.js/download/hls.js-1.0.12.tgz#ad80ee6444217f4f22de7cdf0da0a49ce1dad845"
-  integrity sha1-rYDuZEQhf08i3nzfDaCknOHa2EU=
+  version "1.1.0"
+  resolved "https://registry.npmmirror.com/hls.js/download/hls.js-1.1.0.tgz#2cac6bbb39ecdd6d7f66233c56a15826e30afde4"
+  integrity sha512-H0zTitroA/l1JGUHFDOEcqqERGgHJnIwk12OG/9v/hXVGhNY6Yy17a0TecNdKFBiA8s/PaLswx1UwR1QKxouBQ==
 
 htmlparser2@^7.1.2:
-  version "7.1.2"
-  resolved "https://registry.nlark.com/htmlparser2/download/htmlparser2-7.1.2.tgz#587923d38f03bc89e03076e00cba2c7473f37f7c"
-  integrity sha1-WHkj048DvIngMHbgDLosdHPzf3w=
+  version "7.2.0"
+  resolved "https://registry.npmmirror.com/htmlparser2/download/htmlparser2-7.2.0.tgz?cache=0&sync_timestamp=1636640841489&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fhtmlparser2%2Fdownload%2Fhtmlparser2-7.2.0.tgz#8817cdea38bbc324392a90b1990908e81a65f5a5"
+  integrity sha512-H7MImA4MS6cw7nbyURtLPO1Tms7C5H602LRETv95z1MxO/7CP7rDVROehUYeYBUYEON94NXXDEPmZuq+hX4sog==
   dependencies:
     domelementtype "^2.0.1"
     domhandler "^4.2.2"
@@ -1387,7 +1334,7 @@ kolorist@^1.5.0:
   resolved "https://registry.npmjs.org/kolorist/-/kolorist-1.5.0.tgz"
   integrity sha512-pPobydIHK884YBtkS/tWSZXpSAEpcMbilyun3KL37ot935qL2HNKm/tI45i/Rd+MxdIWEhm7/LmUQzWZYK+Qhg==
 
-less-loader@^10.2.0:
+less-loader@^10.0.1:
   version "10.2.0"
   resolved "https://registry.npmmirror.com/less-loader/download/less-loader-10.2.0.tgz#97286d8797dc3dc05b1d16b0ecec5f968bdd4e32"
   integrity sha1-lyhth5fcPcBbHRaw7OxflovdTjI=
@@ -1396,7 +1343,7 @@ less-loader@^10.2.0:
 
 less@^4.1.2:
   version "4.1.2"
-  resolved "https://registry.npmmirror.com/less/download/less-4.1.2.tgz#6099ee584999750c2624b65f80145f8674e4b4b0"
+  resolved "https://registry.npmmirror.com/less/download/less-4.1.2.tgz?cache=0&sync_timestamp=1633303807622&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fless%2Fdownload%2Fless-4.1.2.tgz#6099ee584999750c2624b65f80145f8674e4b4b0"
   integrity sha1-YJnuWEmZdQwmJLZfgBRfhnTktLA=
   dependencies:
     copy-anything "^2.0.1"
@@ -1782,7 +1729,7 @@ prismjs@^1.23.0:
 
 prismjs@^1.25.0:
   version "1.25.0"
-  resolved "https://registry.npmmirror.com/prismjs/download/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
+  resolved "https://registry.nlark.com/prismjs/download/prismjs-1.25.0.tgz#6f822df1bdad965734b310b315a23315cf999756"
   integrity sha1-b4It8b2tllc0sxCzFaIzFc+Zl1Y=
 
 promise@^7.0.1:
@@ -2133,7 +2080,7 @@ tslib@^2.3.0:
 
 typescript@^4.4.4:
   version "4.4.4"
-  resolved "https://registry.npmmirror.com/typescript/download/typescript-4.4.4.tgz?cache=0&sync_timestamp=1636529058575&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-4.4.4.tgz#2cd01a1a1f160704d3101fd5a58ff0f9fcb8030c"
+  resolved "https://registry.npmmirror.com/typescript/download/typescript-4.4.4.tgz?cache=0&sync_timestamp=1636874378900&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Ftypescript%2Fdownload%2Ftypescript-4.4.4.tgz#2cd01a1a1f160704d3101fd5a58ff0f9fcb8030c"
   integrity sha1-LNAaGh8WBwTTEB/VpY/w+fy4Aww=
 
 uc.micro@^1.0.1, uc.micro@^1.0.5:
@@ -2175,7 +2122,7 @@ vite@^2.4.4:
 
 vite@^2.6.14, vite@^2.6.5:
   version "2.6.14"
-  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.14.tgz?cache=0&sync_timestamp=1636491769573&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvite%2Fdownload%2Fvite-2.6.14.tgz#35c09a15e4df823410819a2a239ab11efb186271"
+  resolved "https://registry.npmmirror.com/vite/download/vite-2.6.14.tgz#35c09a15e4df823410819a2a239ab11efb186271"
   integrity sha512-2HA9xGyi+EhY2MXo0+A2dRsqsAG3eFNEVIo12olkWhOmc8LfiM+eMdrXf+Ruje9gdXgvSqjLI9freec1RUM5EA==
   dependencies:
     esbuild "^0.13.2"
@@ -2251,7 +2198,7 @@ void-elements@^3.1.0:
 
 vscode-css-languageservice@^5.1.7:
   version "5.1.8"
-  resolved "https://registry.npmmirror.com/vscode-css-languageservice/download/vscode-css-languageservice-5.1.8.tgz#36cb389788ffc2d5e6630ffc84e55ee38f8a2338"
+  resolved "https://registry.npmmirror.com/vscode-css-languageservice/download/vscode-css-languageservice-5.1.8.tgz?cache=0&sync_timestamp=1635297408142&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-css-languageservice%2Fdownload%2Fvscode-css-languageservice-5.1.8.tgz#36cb389788ffc2d5e6630ffc84e55ee38f8a2338"
   integrity sha1-Nss4l4j/wtXmYw/8hOVe44+KIzg=
   dependencies:
     vscode-languageserver-textdocument "^1.0.1"
@@ -2261,7 +2208,7 @@ vscode-css-languageservice@^5.1.7:
 
 vscode-html-languageservice@^4.1.0:
   version "4.1.1"
-  resolved "https://registry.npmmirror.com/vscode-html-languageservice/download/vscode-html-languageservice-4.1.1.tgz#93739c9f3d0c12c8249bad23f5005850c289ec38"
+  resolved "https://registry.npmmirror.com/vscode-html-languageservice/download/vscode-html-languageservice-4.1.1.tgz?cache=0&sync_timestamp=1635297408470&other_urls=https%3A%2F%2Fregistry.npmmirror.com%2Fvscode-html-languageservice%2Fdownload%2Fvscode-html-languageservice-4.1.1.tgz#93739c9f3d0c12c8249bad23f5005850c289ec38"
   integrity sha1-k3Ocnz0MEsgkm60j9QBYUMKJ7Dg=
   dependencies:
     vscode-languageserver-textdocument "^1.0.1"
@@ -2270,9 +2217,9 @@ vscode-html-languageservice@^4.1.0:
     vscode-uri "^3.0.2"
 
 vscode-json-languageservice@^4.1.8:
-  version "4.1.9"
-  resolved "https://registry.npmmirror.com/vscode-json-languageservice/download/vscode-json-languageservice-4.1.9.tgz#fb48edc69e37167c3cafd447c3fa898052d87b61"
-  integrity sha1-+0jtxp43Fnw8r9RHw/qJgFLYe2E=
+  version "4.1.10"
+  resolved "https://registry.npmmirror.com/vscode-json-languageservice/download/vscode-json-languageservice-4.1.10.tgz#5d5729fc4f3e02f41599e0104523a1877c25f0fb"
+  integrity sha512-IHliMEEYSY0tJjJt0ECb8ESx/nRXpoy9kN42WVQXgaqGyizFAf3jibSiezDQTrrY7f3kywXggCU+kkJEM+OLZQ==
   dependencies:
     jsonc-parser "^3.0.0"
     vscode-languageserver-textdocument "^1.0.1"
@@ -2404,7 +2351,7 @@ vue@^3.2.1:
     "@vue/runtime-dom" "3.2.4"
     "@vue/shared" "3.2.4"
 
-vue@^3.2.19, vue@^3.2.21:
+vue@^3.2.19, vue@^3.2.2, vue@^3.2.21:
   version "3.2.21"
   resolved "https://registry.npmmirror.com/vue/download/vue-3.2.21.tgz#55f5665172d95cf97e806b9aad0a375180be23a1"
   integrity sha1-VfVmUXLZXPl+gGuarQo3UYC+I6E=
@@ -2414,15 +2361,6 @@ vue@^3.2.19, vue@^3.2.21:
     "@vue/runtime-dom" "3.2.21"
     "@vue/server-renderer" "3.2.21"
     "@vue/shared" "3.2.21"
-
-vue@^3.2.2:
-  version "3.2.6"
-  resolved "https://registry.nlark.com/vue/download/vue-3.2.6.tgz?cache=0&sync_timestamp=1629824252933&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fvue%2Fdownload%2Fvue-3.2.6.tgz"
-  integrity sha1-xxRFB4dR9Fhkj9j7Oi2pdVB9A9I=
-  dependencies:
-    "@vue/compiler-dom" "3.2.6"
-    "@vue/runtime-dom" "3.2.6"
-    "@vue/shared" "3.2.6"
 
 wcwidth@^1.0.1:
   version "1.0.1"
