@@ -12,18 +12,18 @@
         <!-- <p class="top-title">{{ currTime }}</p> -->
         
         <span v-if="noChannel" >
-            <button @click.stop="channelChooseClick">选择通道</button>
+            <n-button round type="info" @click.stop="channelChooseClick">选择通道</n-button>
         </span>
         <span class="top-button" v-if="!noChannel">
-            <button @click.stop="channelChooseClick">选择通道</button>
-            <button v-if="showClose" @click.stop="channelCloseClick">关闭</button>
+            <n-button round type="info" @click.stop="channelChooseClick">选择通道</n-button>
+            <n-button round v-if="showClose" type="warning" @click.stop="channelCloseClick">关闭</n-button>
         </span>
     </div>
 </template>
 
 <script  setup>
 import { onUnmounted, reactive, ref } from 'vue'
-
+import { NButton } from 'naive-ui'
 Date.prototype.format = function (fmt) {
     let o = {
         'h+': this.getHours(),

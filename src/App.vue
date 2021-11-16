@@ -43,8 +43,8 @@ const options = reactive({
   control: true, //是否显示控制器
   title: 'Channel1', //视频名称
   type: 'm3u8',
-  // src: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', //视频源
-  src: 'http://127.0.0.1:8083/play/hls/H264_AAC/index.m3u8',
+  src: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', //视频源
+  // src: 'http://127.0.0.1:8083/play/hls/H264_AAC/index.m3u8',
   // src: "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4", //视频源
   // src: "https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8", //视频源
   poster: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/ironMan.jpg', //封面

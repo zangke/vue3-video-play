@@ -33,6 +33,7 @@
   },
   "dependencies": {
     "hls.js": "^1.0.10",
+    "naive-ui": "^2.20.3",
     "throttle-debounce": "^3.0.1",
     "vue": "^3.2.21"
   },
