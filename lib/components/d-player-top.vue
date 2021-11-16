@@ -10,7 +10,11 @@
         <span class="top-title">{{ title }} </span>
         <!-- <p class="top-title">{{ title || '' }}</p> -->
         <!-- <p class="top-title">{{ currTime }}</p> -->
-        <span class="top-button">
+        
+        <span v-if="noChannel" >
+            <button @click.stop="channelChooseClick">选择通道</button>
+        </span>
+        <span class="top-button" v-if="!noChannel">
             <button @click.stop="channelChooseClick">选择通道</button>
             <button v-if="showClose" @click.stop="channelCloseClick">关闭</button>
         </span>
@@ -38,6 +42,9 @@ const props = defineProps({
         default: ''
     },
     showClose: { 
+        default : false
+    },
+    noChannel: { 
         default : false
     }
 })
@@ -70,29 +77,27 @@ const channelCloseClick = (e) => {
 .d-player-top {
     position: absolute;
     font-size: 16px;
+    text-align: center;
     top: 0;
     display: flex;
-    height: 36px;
+    height: 30px;
     width: 100%;
-    // background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+    line-height: 30px;
     background-color:transparent;
     justify-content: space-between;
     z-index:100;
 
 }
 .top-title {
-    padding-left: 3px;
     color: #fff;
     background-color:hsla(0,0%,50%,.5);
     border-radius:2px; 
-    padding:5px;
     max-width:120px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
 .top-button {
-    padding-right: 3px;
     display: none;
 }
 .d-player-top:hover .top-button {

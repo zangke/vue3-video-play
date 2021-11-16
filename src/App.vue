@@ -9,7 +9,7 @@
   <!-- <div style="height:150px; margin-top:100px">
     <d-slider v-model="options.volume"></d-slider>
   </div>-->
-  <div style="text-align: center">
+  <div class="vbox">
     <!-- <button
       @click="options.src = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8'"
     >{{ options.src }}
@@ -43,11 +43,12 @@ const options = reactive({
   control: true, //是否显示控制器
   title: 'Channel1', //视频名称
   type: 'm3u8',
-  src: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', //视频源
-  // src: 'http://127.0.0.1:8083/play/hls/H264_AAC/index.m3u8',
+  // src: 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8', //视频源
+  src: 'http://127.0.0.1:8083/play/hls/H264_AAC/index.m3u8',
   // src: "https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/IronMan.mp4", //视频源
   // src: "https://logos-channel.scaleengine.net/logos-channel/live/biblescreen-ad-free/playlist.m3u8", //视频源
   poster: 'https://cdn.jsdelivr.net/gh/xdlumia/files/video-play/ironMan.jpg', //封面
+  preload: 'none',
   controlBtns: [
     'audioTrack',
     'quality',
@@ -63,13 +64,14 @@ const video = ref(null)
 
 const onChannelChooseClick = (ev) => {
   console.log(ev, '选择通道')
-  debugger
   options.src = 'https://test-streams.mux.dev/x36xhzz/x36xhzz.m3u8';
 }
 
 const onChannelCloseClick =  (ev) => {
   console.log(ev, '关闭通道')
-  debugger
+  console.log(video, '关闭通道')
+  console.log(video.value, '关闭通道')
+  video.value.pause()
   options.src = ''
 }
 nextTick(() => {
@@ -77,4 +79,10 @@ nextTick(() => {
 })
 </script>
 
-<style scoped></style>
+<style scoped>
+.vbox {
+  width: 100%;
+  height: 100%;
+  text-align: center
+}
+</style>
